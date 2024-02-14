@@ -56,11 +56,15 @@ ul {
 }
 
 .align-items-end {
-    align-items: end;
+    align-items: flex-end;
 }
 
 .justify-content-s-b {
     justify-content: space-between;
+}
+
+.j-c-end {
+    justify-content: flex-end;
 }
 
 .flex-wrap {

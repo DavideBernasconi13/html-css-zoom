@@ -1,3 +1,52 @@
-h1 {
-    color: coral;
+/* Custom properties */
+:root {
+    --color-negative: #ffffff;
+    --color-main: #000000;
+    --color-secondary: #4A4A4A;
+    --color-accent-color: #008000;
+}
+
+/* General */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+}
+
+.wrapper {
+    background-color: var(--color-main);
+    color: var(--color-negative);
+    width: 100%;
+    height: 100vh;
+}
+
+.control {
+    background-color: var(--color-secondary);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Topbar */
+.top-bar {
+    height: 50px;
+    gap: 5px;
+}
+
+/* main */
+.user-display {
+    height: calc(100% - 120px);
+    overflow-y: auto;
+    gap: 10px;
+}
+
+.user-display-img {
+    width: calc(100% / 7 - 10px);
+    aspect-ratio: 16/9;
+    min-height: 400px;
+    background-color: var(--color-accent-color);
+}
+
+/* Tool-bar */
+.tool-bar {
+    height: 70px;
+    background-color: #222;
 }
